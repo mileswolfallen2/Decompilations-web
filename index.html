@@ -400,6 +400,16 @@ const pages = {
     label: 'Fully Released',
     items: [
       {
+        title: 'LEGO Island', project: 'isledecomp', platform: 'DOS',
+        status: 'accuracy 100',
+        description: 'This is a functionally complete decompilation of LEGO Island (Version 1.1, English). It aims to be as accurate as possible',
+        pc: ['Windows', 'macOS', 'Linux', 'HTML5', 'DOS', 'FreeBSD', 'Android', 'iOS', '3DS', 'PS Vita', 'Nintendo Switch', 'Xbox One'],
+        features: ['Native 60 FPS game logic','runs on a custom-built cross-platform engine','supports modern resolutions and widescreen'],
+        github: 'https://github.com/isledecomp/isle-portable',
+        website: null,
+        notes: 'matkc hehe',
+      },
+      {
         title: 'Super Mario 64', project: 'sm64ex / Ghostship', platform: 'Nintendo 64',
         status: 'Playable',
         description: 'Uncapped FPS, 4K rendering, and a deep mod loader for custom content.',
@@ -800,9 +810,8 @@ function openModal(item) {
     const osSec = section('Runs natively on');
     const osRow = document.createElement('div');
     osRow.className = 'os-row';
-    const osIcons = { Windows: '🪟', macOS: '🍎', Linux: '🐧' };
     item.pc.forEach(os => {
-      osRow.innerHTML += `<span class="os-chip avail">${osIcons[os] || '💻'} ${os}</span>`;
+      osRow.innerHTML += `<span class="os-chip avail">${os}</span>`;
     });
     osSec.appendChild(osRow);
     body.appendChild(osSec);
