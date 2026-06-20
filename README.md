@@ -9,11 +9,12 @@ An animated HTML, CSS, and JavaScript showcase for native PC ports, decompilatio
 - A sources section with official repositories and legal reminder text.
 - Detail cards with progress indicators and project links.
 
-## How to run
+## How to help 
 
-1. Open `index.html` in a browser.
-2. If you want the richer data view with modal details, open `index2.html` instead.
-3. Click a project card to view its platforms, features, and links.
+1. just share the project with others
+2. help with dev work or bugs
+3. help as keep it up to date with info
+4. help add info 
 
 ## Notes
 
